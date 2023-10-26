@@ -6,7 +6,7 @@ const SettingsScreen = ({ navigation }) => {
     const [notificationEnabled, setNotificationEnabled] = useState(true);
     const [darkMode, setDarkMode] = useState(false);
 
-    const profileImage = require('C:/Users/marsh/git/Nexus/assets/oldbearcat.png');
+    const profileImage = require('/Users/tahjmarshall/git/Nexus/assets/mochi.png');
 
     const handleProfileClick = () => {
         // Navigate to the ProfileSettings screen when the profile picture is clicked
