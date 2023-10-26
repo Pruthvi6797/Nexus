@@ -45,7 +45,7 @@ const ProfileSettingsScreen = () => {
     <ScrollView contentContainerStyle={ProfileSettingsStyles.container}>
       <View style={ProfileSettingsStyles.profilePictureContainer}>
         <Image
-          source={require('C:/Users/marsh/Nexus/assets/oldbearcat.png')} 
+          source={require('C:/Users/marsh/git/Nexus/assets/oldbearcat.png')} 
           style={ProfileSettingsStyles.profilePicture}
           
         />
