@@ -20,7 +20,7 @@ const SettingsScreen = ({ navigation }) => {
 
     const handleHelpSupportClick = () => {
         // Navigate to the HelpSupportScreen
-        navigation.navigate('HelpSupportScreen');S
+        navigation.navigate('HelpSupportScreen');
     };
 
     const handlePrivacyPolicyClick = () => {
