@@ -18,7 +18,16 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
+      <StatusBar style="light" backgroundColor="#000000" />
+      <Stack.Navigator
+        initialRouteName="Login"
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: 'black', // Set the header background color to black
+          },
+          headerTintColor: 'red', // Set the header text color to red
+        }}
+      >
         <Stack.Screen 
           name="Login" 
           component={LoginScreen} 

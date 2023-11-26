@@ -5,18 +5,18 @@ const SettingsScreenStyles = StyleSheet.create({
         flex: 1,
         padding: 20,
         alignItems: 'center',
-        backgroundColor: 'white', // Default background color
+        backgroundColor: 'black', // Default background color
     },
     darkModeContainer: {
-        backgroundColor: 'black', // Background color in dark mode
+        backgroundColor: 'white', // Background color in dark mode
     },
     title: {
         fontSize: 24,
         marginBottom: 20,
-        color: 'black', // Default text color
+        color: 'red', // Default text color
     },
     darkModeTitle: {
-        color: 'white', // Text color in dark mode
+        color: 'black', // Text color in dark mode
     },
     settingRow: {
         flexDirection: 'row',
@@ -52,10 +52,10 @@ const SettingsScreenStyles = StyleSheet.create({
     },
     navigationButtonText: {
         fontSize: 18,
-        color: 'black', // Default text color
+        color: 'red', // Default text color
     },
     darkModeText: {
-        color: 'white', // Text color in dark mode
+        color: 'black', // Text color in dark mode
     },
 });
 

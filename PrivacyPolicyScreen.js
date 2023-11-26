@@ -1,4 +1,3 @@
-// PrivacyPolicyScreen.js
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
@@ -30,7 +29,7 @@ const PrivacyPolicyScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Terms of Service</Text>
-      <Text>{termsOfService}</Text>
+      <Text style={styles.text}>{termsOfService}</Text>
     </View>
   );
 };
@@ -39,10 +38,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    backgroundColor: 'black', // Set the background color to black
   },
   title: {
     fontSize: 24,
     marginBottom: 20,
+    color: 'red', // Set the text color to red
+  },
+  text: {
+    color: 'red', // Set the text color to red
   },
 });
 

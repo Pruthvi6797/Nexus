@@ -4,11 +4,13 @@ const ProfileSettingsStyles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    backgroundColor: 'black',
   },
   title: {
     fontSize: 24,
     marginBottom: 10,
-},
+    color: 'red',
+  },
   profilePictureContainer: {
     alignItems: 'center',
     marginBottom: 5,
@@ -23,13 +25,15 @@ const ProfileSettingsStyles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 10,
     marginBottom: 5,
+    color: 'red',
   },
   input: {
     padding: 10,
     borderWidth: 1,
-    borderColor: 'black', // Changed to black
+    borderColor: 'red', // Set the border color to red
     borderRadius: 5,
     marginBottom: 10,
+    color: 'red',
   },
   saveButton: {
     backgroundColor: 'blue',

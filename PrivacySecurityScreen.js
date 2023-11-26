@@ -1,4 +1,3 @@
-// PrivacySecurityScreen.js
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
@@ -29,20 +28,24 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    backgroundColor: 'black', // Set the background color to black
   },
   title: {
     fontSize: 24,
     marginBottom: 20,
+    color: 'red', // Set the text color to red
   },
   button: {
-    backgroundColor: 'blue', // Change the color as needed
+    backgroundColor: 'black', // Set the button background color to black
     borderRadius: 5,
     padding: 10,
     alignItems: 'center',
     marginTop: 10,
+    borderColor: 'red', // Set the border color to red
+    borderWidth: 1, // Add border to the button
   },
   buttonText: {
-    color: 'white',
+    color: 'red', // Set the button text color to red
     fontSize: 18,
   },
 });

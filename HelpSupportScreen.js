@@ -1,4 +1,3 @@
-// HelpSupportScreen.js
 import React from 'react';
 import { View, Text, StyleSheet, Linking } from 'react-native';
 
@@ -16,8 +15,7 @@ const HelpSupportScreen = () => {
 
   return (
     <View style={styles.container}>
-
-      <Text>
+      <Text style={styles.text}>
         For any assistance or questions, please feel free to contact us:
       </Text>
 
@@ -29,7 +27,7 @@ const HelpSupportScreen = () => {
         Phone: {supportPhoneNumber}
       </Text>
 
-      <Text>
+      <Text style={styles.text}>
         You can send us an email or call us for immediate assistance.
       </Text>
 
@@ -48,17 +46,20 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    backgroundColor: 'black', // Set the background color to black
   },
-  title: {
-    fontSize: 24,
-    marginBottom: 20,
+  text: {
+    fontSize: 16,
+    marginBottom: 10,
+    color: 'red', // Set the text color to red
   },
   supportInfo: {
     fontSize: 16,
     marginBottom: 10,
+    color: 'red', // Set the text color to red
   },
   link: {
-    color: 'blue',
+    color: 'red', // Set the link text color to red
     textDecorationLine: 'underline',
     fontSize: 16,
     marginTop: 10,

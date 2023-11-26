@@ -6,7 +6,7 @@ const SettingsScreen = ({ navigation }) => {
     const [notificationEnabled, setNotificationEnabled] = useState(true);
     const [darkMode, setDarkMode] = useState(false);
 
-    const profileImage = require('/Users/tahjmarshall/git/Nexus/assets/mochi.png');
+    const profileImage = require('C:/Users/marsh/git/Nexus/assets/oldbearcat.png');
 
     const handleProfileClick = () => {
         // Navigate to the ProfileSettings screen when the profile picture is clicked
@@ -37,7 +37,7 @@ const SettingsScreen = ({ navigation }) => {
             <Text style={[SettingsScreenStyles.title, darkMode && SettingsScreenStyles.darkModeTitle]}>John Doe</Text>
 
             <View style={SettingsScreenStyles.settingRow}>
-                <Text style={[darkMode && SettingsScreenStyles.darkModeText]}>Enable Notifications</Text>
+                <Text style={[!darkMode ? { color: '#FF0000' } : null]}>Enable Notifications</Text>
                 <Switch 
                     value={notificationEnabled} 
                     onValueChange={setNotificationEnabled} 
@@ -45,7 +45,7 @@ const SettingsScreen = ({ navigation }) => {
             </View>
 
             <View style={SettingsScreenStyles.settingRow}>
-                <Text style={[darkMode && SettingsScreenStyles.darkModeText]}>Dark Mode</Text>
+                <Text style={[!darkMode ? { color: '#FF0000' } : null]}>Light Mode</Text>
                 <Switch 
                     value={darkMode} 
                     onValueChange={setDarkMode} 

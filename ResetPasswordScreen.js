@@ -18,6 +18,7 @@ const ResetPasswordScreen = ({ navigation }) => {
       <TextInput
         style={styles.input}
         placeholder="Email Address"
+        placeholderTextColor="red" // Set the placeholder text color to red
         onChangeText={setEmail}
         value={email}
       />
@@ -30,17 +31,20 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    backgroundColor: 'black', // Set the background color to black
   },
   title: {
     fontSize: 24,
     marginBottom: 20,
+    color: 'red', // Set the text color to red
   },
   input: {
     height: 40,
-    borderColor: 'gray',
+    borderColor: 'red', // Set the border color to red
     borderWidth: 1,
     marginBottom: 10,
     padding: 10,
+    color: 'red', // Set the text color of the input to red
   },
 });
 
